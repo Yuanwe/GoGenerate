@@ -55,9 +55,9 @@
     - {package: autoCode/fe/,tplpath: ./resource/template/fe/table.vue.tpl}
 ```
 ## 6.项目运行
-> 项目理论上支持全平台，将编译后的可执行文件以及gen_config.yaml、/resource放在同一目录下
-> Mac/Linux: ./GoGenerate 即可
-> Windows：双击运行即可
+- 项目理论上支持全平台，需要将编译后的可执行文件以及gen_config.yaml、/resource放在同一目录下
+- Mac/Linux: ./GoGenerate 即可
+- Windows：双击运行即可
 
 
 
