@@ -1,0 +1,27 @@
+# GO-GEN Global Configuration
+# mysql connect configuration
+mysql:
+  username: root
+  password: '****'
+  path: '****'
+  db-name: '****'
+  config: 'charset=utf8&parseTime=True&loc=Local'
+  max-idle-conns: 10
+  max-open-conns: 10
+  log-mode: false
+template:
+  project: "GoGenerate"
+  tableName: "t_campaigns,t_delearship_enrolls"
+  gotpl:
+    - {package: autoCode/api/,tplpath: ./resource/template/te/api.go.tpl}
+    - {package: autoCode/model/,tplpath: ./resource/template/te/model.go.tpl}
+    - {package: autoCode/router/,tplpath: ./resource/template/te/router.go.tpl}
+    - {package: autoCode/service/,tplpath: ./resource/template/te/service.go.tpl}
+    - {package: autoCode/fe/,tplpath: ./resource/template/fe/api.js.tpl}
+    - {package: autoCode/fe/,tplpath: ./resource/template/fe/table.vue.tpl}
+# system configuration
+log:
+  prefix: '[GO-GEN]'
+  log-file: true
+  stdout: 'DEBUG'
+  file: 'DEBUG'
